@@ -1,10 +1,8 @@
-import React from "react";
-
 const ProjectCard = ({ card, classes }) => {
     return (
         <div
             className={
-                "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors" +
+                "relative p-4 rounded-2xl bg-white/90 hover:bg-stone-50/60 active:bg-stone-100/60 ring-1 ring-inset ring-stone-200/40 transition-all duration-300 card-hover spotlight " +
                 classes
             }
         >
@@ -19,13 +17,13 @@ const ProjectCard = ({ card, classes }) => {
 
             <div className="flex items-center justify-between gap-4">
                 <div>
-                    <h3 className="title-1 mb-3">{card.title}</h3>
+                    <h3 className="title-1 mb-3 text-gray-900">{card.title}</h3>
 
                     <div className="flex flex-wrap items-center gap-2">
                         {card.tags.map((label, key) => (
                             <span
                                 key={key}
-                                className="h-8 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg"
+                                className="h-8 text-sm text-gray-600 bg-stone-50/90 grid items-center px-3 rounded-lg border border-stone-200/40"
                             >
                                 {" "}
                                 {label}
@@ -34,7 +32,7 @@ const ProjectCard = ({ card, classes }) => {
                     </div>
                 </div>
 
-                <div className="w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0">
+                <div className="w-11 h-11 rounded-lg grid place-items-center bg-gradient-to-r from-gray-800 to-black text-white shrink-0">
                     <span
                         className="material-symbols-rounded"
                         aria-hidden="true"

@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonPrimary from "./ButtonPrimary";
 
 const sitemap = [
@@ -49,7 +48,7 @@ const socials = [
 
 const Footer = () => {
     return (
-        <footer className="section">
+        <footer className="section section-enhanced">
             <div className="container">
                 <div className="lg:grid lg:grid-cols-2">
                     <div className="mb-10">
@@ -67,14 +66,16 @@ const Footer = () => {
 
                     <div className="grid grid-cols-2 gap-4 lg:pl-20">
                         <div>
-                            <p className="mb-2 reveal-up">Sitemap</p>
+                            <p className="mb-2 reveal-up text-gray-900 font-medium">
+                                Sitemap
+                            </p>
 
                             <ul>
                                 {sitemap.map(({ label, href }, key) => (
                                     <li key={key}>
                                         <a
                                             href={href}
-                                            className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                            className="block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -84,7 +85,9 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <p className="mb-2 reveal-up">Socials</p>
+                            <p className="mb-2 reveal-up text-gray-900 font-medium">
+                                Socials
+                            </p>
 
                             <ul>
                                 {socials.map(({ label, href }, key) => (
@@ -92,7 +95,7 @@ const Footer = () => {
                                         <a
                                             href={href}
                                             target="_blank"
-                                            className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                            className="block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -113,9 +116,9 @@ const Footer = () => {
                         />
                     </a>
 
-                    <p className="text-zinc-500 text-sm reveal-up">
+                    <p className="text-gray-500 text-sm reveal-up">
                         &copy; 2025{" "}
-                        <span className="text-zinc-200">codewithmaria</span>
+                        <span className="text-gray-900">codewithmaria</span>
                     </p>
                 </div>
             </div>

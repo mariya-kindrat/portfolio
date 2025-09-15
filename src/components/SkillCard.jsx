@@ -1,14 +1,12 @@
-import React from "react";
-
 const SkillCard = ({ imgSrc, label, desc, classes }) => {
     return (
         <div
             className={
-                "flex items-center gap-3 ring-2 ring-inset ring-zinc-50/10 rounded-2xl p-3 hover:bg-zinc-800 transition-colors group" +
+                "flex items-center gap-3 ring-2 ring-inset ring-indigo-200/30 rounded-2xl p-3 hover:bg-indigo-50/50 transition-all duration-300 group card-hover spotlight " +
                 classes
             }
         >
-            <figure className="bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 group-hover:bg-zinc-900transition-colors">
+            <figure className="bg-white/80 rounded-lg overflow-hidden w-12 h-12 p-2 group-hover:bg-indigo-50 transition-colors border border-indigo-200/30">
                 <img
                     src={imgSrc}
                     width={32}
@@ -18,9 +16,9 @@ const SkillCard = ({ imgSrc, label, desc, classes }) => {
                 />
             </figure>
             <div className="">
-                <h3 className="">{label}</h3>
+                <h3 className="text-gray-900 font-medium">{label}</h3>
 
-                <p className="text-zinc-400 text-sm">{desc}</p>
+                <p className="text-gray-600 text-sm">{desc}</p>
             </div>
         </div>
     );

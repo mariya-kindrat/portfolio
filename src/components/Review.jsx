@@ -1,9 +1,8 @@
-import React from "react";
 import ReviewCard from "./ReviewCard";
 
+import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -65,7 +64,10 @@ const Review = () => {
         });
     });
     return (
-        <section id="reviews" className="section overflow-hidden">
+        <section
+            id="reviews"
+            className="section overflow-hidden section-enhanced"
+        >
             <div className="container">
                 <h2 className="headline-2 mb-8 reveal-up">
                     What our customers say

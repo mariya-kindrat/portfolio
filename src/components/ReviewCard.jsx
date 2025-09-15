@@ -1,5 +1,3 @@
-import React from "react";
-
 const ratings = new Array(5);
 ratings.fill({
     icon: "star",
@@ -9,12 +7,12 @@ console.log(ratings);
 
 const ReviewCard = ({ content, imgSrc, name, company }) => {
     return (
-        <div className="bg-zinc-800 p-5 rounded-xl min-w-[320px] flex flex-col lg:min-w-[]420px">
+        <div className="bg-white/80 p-5 rounded-xl min-w-[320px] flex flex-col lg:min-w-[420px] border border-indigo-200/30 card-hover spotlight">
             <div className="flex items-center gap-1 mb-3">
                 {ratings.map(({ icon, style }, key) => (
                     <span
                         key={key}
-                        className="material-symbols-rounded text-yellow-300 text-[18px]"
+                        className="material-symbols-rounded text-amber-400 text-[18px]"
                         style={style}
                     >
                         {icon}
@@ -22,7 +20,7 @@ const ReviewCard = ({ content, imgSrc, name, company }) => {
                 ))}
             </div>
 
-            <p className="text-zinc-400 mb-8">{content}</p>
+            <p className="text-gray-600 mb-8">{content}</p>
             <div className="flex items-center gap-2 mt-auto">
                 <figure className="img-box rounded-lg">
                     <img
@@ -35,9 +33,9 @@ const ReviewCard = ({ content, imgSrc, name, company }) => {
                     />
                 </figure>
                 <div className="">
-                    <p>{name}</p>
+                    <p className="text-gray-900 font-medium">{name}</p>
 
-                    <p className="text-xs text-zinc-400 tracking-wider">
+                    <p className="text-xs text-gray-500 tracking-wider">
                         {company}
                     </p>
                 </div>
