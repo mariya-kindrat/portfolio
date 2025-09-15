@@ -81,7 +81,7 @@ const Contact = () => {
                     <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
                         Contact me for collaboration
                     </h2>
-                    <p className="text-gray-600 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
+                    <p className="contact-text text-gray-600 mt-3 mb-8 max-w-[50ch] lg:max-w-[30ch] reveal-up">
                         Reach out today to discuss your project needs and start
                         collaborating on something amazing!
                     </p>
@@ -91,7 +91,7 @@ const Contact = () => {
                                 key={key}
                                 href={href}
                                 target="_blank"
-                                className="w-12 h-12 grid place-items-center ring-inset ring-2
+                                className="social-link w-12 h-12 grid place-items-center ring-inset ring-2
                                  ring-indigo-200/30 rounded-lg transition-[background-color, color]
                                   hover:bg-indigo-600 hover:text-white active:bg-indigo-700 reveal-up"
                             >

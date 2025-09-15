@@ -66,7 +66,7 @@ const Footer = () => {
 
                     <div className="grid grid-cols-2 gap-4 lg:pl-20">
                         <div>
-                            <p className="mb-2 reveal-up text-gray-900 font-medium">
+                            <p className="footer-heading mb-2 reveal-up text-gray-900 font-medium">
                                 Sitemap
                             </p>
 
@@ -75,7 +75,7 @@ const Footer = () => {
                                     <li key={key}>
                                         <a
                                             href={href}
-                                            className="block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
+                                            className="footer-link block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -85,7 +85,7 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <p className="mb-2 reveal-up text-gray-900 font-medium">
+                            <p className="footer-heading mb-2 reveal-up text-gray-900 font-medium">
                                 Socials
                             </p>
 
@@ -95,7 +95,7 @@ const Footer = () => {
                                         <a
                                             href={href}
                                             target="_blank"
-                                            className="block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
+                                            className="footer-link block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -116,9 +116,11 @@ const Footer = () => {
                         />
                     </a>
 
-                    <p className="text-gray-500 text-sm reveal-up">
+                    <p className="footer-copyright text-gray-500 text-sm reveal-up">
                         &copy; 2025{" "}
-                        <span className="text-gray-900">codewithmaria</span>
+                        <span className="footer-brand text-gray-900">
+                            codewithmaria
+                        </span>
                     </p>
                 </div>
             </div>

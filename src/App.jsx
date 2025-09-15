@@ -10,6 +10,7 @@ import HeroPage from "./components/Hero";
 import Review from "./components/Review";
 import Skill from "./components/Skill";
 import Work from "./components/Work";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -43,18 +44,20 @@ const App = () => {
     });
 
     return (
-        <ReactLenis root>
-            <Header />
-            <main>
-                <HeroPage />
-                <About />
-                <Skill />
-                <Work />
-                <Review />
-                <Contact />
-            </main>
-            <Footer />
-        </ReactLenis>
+        <ThemeProvider>
+            <ReactLenis root>
+                <Header />
+                <main>
+                    <HeroPage />
+                    <About />
+                    <Skill />
+                    <Work />
+                    <Review />
+                    <Contact />
+                </main>
+                <Footer />
+            </ReactLenis>
+        </ThemeProvider>
     );
 };
 

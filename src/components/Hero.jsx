@@ -3,8 +3,11 @@ import ButtonPrimary from "./ButtonPrimary";
 
 const HeroPage = () => {
     return (
-        <section id="home" className="pt-28 lg:pt-36 section-enhanced">
-            <div className="container lg:grid lg:grid-cols-2 items-center lg:gap-10">
+        <section
+            id="home"
+            className="min-h-screen pt-28 lg:pt-36 section-enhanced flex items-center"
+        >
+            <div className="container lg:grid lg:grid-cols-2 items-center lg:gap-10 w-full">
                 <div>
                     <div className="flex items-center gap-3">
                         <figure className="img-box w-9 h-9 rounded-lg">
@@ -55,7 +58,7 @@ const HeroPage = () => {
                             width={656}
                             height={800}
                             alt=""
-                            className="w-full float-animation"
+                            className="w-full transition-transform duration-300 ease-in-out hover:scale-105"
                         />
                     </figure>
                 </div>
