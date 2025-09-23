@@ -105,7 +105,7 @@ const skillItem = [
 
 const Skill = () => {
     return (
-        <section className="section section-enhanced">
+        <section id="skills" className="section section-enhanced">
             <div className="container">
                 <h2 className="headline-2 reveal-up">Essential Tools i use</h2>
                 <p className="text-gray-400 mt-3 mb:-8 max-w-[50ch] reveal-up">

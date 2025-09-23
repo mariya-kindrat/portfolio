@@ -32,20 +32,41 @@ const ProjectCard = ({ card, classes }) => {
                     </div>
                 </div>
 
-                <div className="w-11 h-11 rounded-lg grid place-items-center bg-gradient-to-r from-gray-800 to-black text-white shrink-0">
-                    <span
-                        className="material-symbols-rounded"
-                        aria-hidden="true"
-                    >
-                        arrow_outward
-                    </span>
+                <div className="flex gap-2 shrink-0">
+                    {card.githubLink && (
+                        <a
+                            href={card.githubLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-11 h-11 rounded-lg grid place-items-center bg-gradient-to-r from-gray-700 to-gray-900 text-white hover:from-gray-600 hover:to-gray-800 transition-all duration-300"
+                            title="View on GitHub"
+                        >
+                            <span
+                                className="material-symbols-rounded"
+                                aria-hidden="true"
+                            >
+                                code
+                            </span>
+                        </a>
+                    )}
+                    {card.projectLink && (
+                        <a
+                            href={card.projectLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-11 h-11 rounded-lg grid place-items-center bg-gradient-to-r from-gray-800 to-black text-white hover:from-gray-700 hover:to-gray-900 transition-all duration-300"
+                            title="View Project"
+                        >
+                            <span
+                                className="material-symbols-rounded"
+                                aria-hidden="true"
+                            >
+                                arrow_outward
+                            </span>
+                        </a>
+                    )}
                 </div>
             </div>
-            <a
-                href={card.projectLink}
-                target="_blank"
-                className="absolute inset-0"
-            ></a>
         </div>
     );
 };
