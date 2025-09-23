@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
     {
-        imgSrc: "/images/project-1.jpg",
+        imgSrc: "/images/custom/insta-flowers.png",
         title: "Flower Bee Profile",
         tags: ["API", "MVC", "Development"],
         projectLink: "https://insta-flower-bee-profile.vercel.app",
@@ -10,7 +10,7 @@ const works = [
             "https://github.com/mariya-kindrat/insta-flower-bee-profile",
     },
     {
-        imgSrc: "/images/project-2.jpg",
+        imgSrc: "/images/custom/events-board.png",
         title: "Event Creator app",
         tags: ["API", "SPA"],
         projectLink: "https://develop.d2fcnp581pdhwl.amplifyapp.com",
