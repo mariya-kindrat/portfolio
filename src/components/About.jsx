@@ -1,11 +1,11 @@
 const aboutItems = [
     {
         label: "Project done",
-        number: 45,
+        number: 7,
     },
     {
         label: "Years of experience",
-        number: 10,
+        number: 3,
     },
 ];
 
@@ -20,20 +20,31 @@ const About = () => {
                             "0 8px 30px rgba(99, 102, 241, 0.1), inset 0 0 30px rgba(168, 85, 247, 0.05)",
                     }}
                 >
-                    <p className="about-text text-gray-700 mb-4 md:mb-8 mg:text-xl md:max-w-[60ch]">
-                        Welcome! I&apos;m Henry, a professional web developer
-                        with a knack for crafting visually stunning and highly
-                        functional websites. Combining creativity and technical
-                        expertise. I transform your vision into digital
-                        masterpiece that excels in both appearance and
-                        performance. # Skill Essential Tools I use Discover the
-                        powerful tools and technologies I use to create
-                        exceptional, high-performing websites & applications. #
-                        Work My portfolio highlights # Review What our customers
-                        say # Contact Contact me for collaboration Reach out
-                        today to discuss your project needs and start
-                        collaborating on something amazing! # Footer Let&apos;s
-                        work together today!
+                    <h1 className="headline-1 mb-4 md:mb-6 text-center md:text-left w-full">
+                        React & Next.js Developer: Creating Modern Web
+                        Applications
+                    </h1>
+                    <p className="about-text text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-4 md:mb-8 font-medium text-center md:text-left w-full">
+                        With over three years of experience as a Frontend
+                        Developer, I specialize in crafting scalable,
+                        responsive, and high-performance web applications using
+                        React.js and Next.js. I am passionate about creating
+                        pixel-perfect user interfaces and optimizing performance
+                        to deliver an exceptional user experience. In my recent
+                        role, I led key initiatives that improved application
+                        responsiveness by 16% and reduced initial page load
+                        times by 20% through strategic optimization techniques
+                        like code splitting and lazy loading. I have extensive
+                        experience in global state management using Redux
+                        Toolkit and in integrating third-party REST APIs. I
+                        thrive in collaborative, Agile environments, working
+                        closely with designers to transform complex Figma
+                        mockups into polished, interactive components. A
+                        dedicated learner with a keen eye for detail, I am
+                        always seeking new challenges to contribute my skills to
+                        a dynamic and innovative team. My core competencies
+                        include: JavaScript (ES6+), TypeScript, Redux, HTML/CSS,
+                        REST APIs, and Agile/Scrum methodologies.
                     </p>
                     <div className=" flex flex-wrap items-center gap-4 md:gap-7">
                         {aboutItems.map(({ label, number }, key) => (

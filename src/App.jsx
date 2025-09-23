@@ -7,7 +7,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroPage from "./components/Hero";
-import Review from "./components/Review";
 import Skill from "./components/Skill";
 import Work from "./components/Work";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -52,7 +51,6 @@ const App = () => {
                     <About />
                     <Skill />
                     <Work />
-                    <Review />
                     <Contact />
                 </main>
                 <Footer />
