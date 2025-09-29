@@ -64,7 +64,7 @@ const About = () => {
                         ))}
 
                         <img
-                            src="/images/logo.svg"
+                            src="/images/kindrat_mariya_logo.png"
                             alt="logo"
                             width={30}
                             height={30}

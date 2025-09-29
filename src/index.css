@@ -1,10 +1,6 @@
-@import "tailwindcss";
-
-@plugin 'tailwind-scrollbar';
-
-@theme {
-    --font-inter: "inter", sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .headline-1,
 .headline-2 {

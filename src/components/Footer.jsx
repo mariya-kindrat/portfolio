@@ -17,10 +17,6 @@ const sitemap = [
         label: "Skills",
         href: "#skills",
     },
-    {
-        label: "Contact me",
-        href: "#contact",
-    },
 ];
 
 const socials = [
@@ -40,14 +36,14 @@ const Footer = () => {
             <div className="container">
                 <div className="lg:grid lg:grid-cols-2">
                     <div className="mb-10">
-                        <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
+                        <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up text-gray-900 dark:text-zinc-100 transition-colors duration-300">
                             Let&apos;s work together!
                         </h2>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4 lg:pl-20">
                         <div>
-                            <p className="footer-heading mb-2 reveal-up text-gray-900 font-medium">
+                            <p className="footer-heading mb-2 reveal-up text-gray-900 dark:text-zinc-100 font-medium transition-colors duration-300">
                                 Sitemap
                             </p>
 
@@ -56,7 +52,7 @@ const Footer = () => {
                                     <li key={key}>
                                         <a
                                             href={href}
-                                            className="footer-link block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
+                                            className="footer-link block text-sm text-gray-600 dark:text-zinc-400 py-1 transition-colors duration-300 hover:text-indigo-600 dark:hover:text-indigo-400 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -66,7 +62,7 @@ const Footer = () => {
                         </div>
 
                         <div>
-                            <p className="footer-heading mb-2 reveal-up text-gray-900 font-medium">
+                            <p className="footer-heading mb-2 reveal-up text-gray-900 dark:text-zinc-100 font-medium transition-colors duration-300">
                                 Socials
                             </p>
 
@@ -76,7 +72,7 @@ const Footer = () => {
                                         <a
                                             href={href}
                                             target="_blank"
-                                            className="footer-link block text-sm text-gray-600 py-1 transition-colors hover:text-indigo-600 reveal-up"
+                                            className="footer-link block text-sm text-gray-600 dark:text-zinc-400 py-1 transition-colors duration-300 hover:text-indigo-600 dark:hover:text-indigo-400 reveal-up"
                                         >
                                             {label}
                                         </a>
@@ -88,18 +84,18 @@ const Footer = () => {
                 </div>
 
                 <div className="flex items-center justify-between pt-10 mb-8">
-                    <a href="/" className="logo reveal-up">
+                    <a href="/" className="logo">
                         <img
-                            src="/images/logo.svg"
+                            src="/images/kindrat_mariya_logo.png"
                             width={40}
                             height={40}
                             alt="Logo"
                         />
                     </a>
 
-                    <p className="footer-copyright text-gray-500 text-sm reveal-up">
+                    <p className="footer-copyright text-gray-500 dark:text-zinc-500 text-sm transition-colors duration-300">
                         &copy; 2025{" "}
-                        <span className="footer-brand text-gray-900">
+                        <span className="footer-brand text-gray-900 dark:text-zinc-100 transition-colors duration-300">
                             codewithmaria
                         </span>
                     </p>

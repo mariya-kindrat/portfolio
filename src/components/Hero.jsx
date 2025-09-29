@@ -32,14 +32,15 @@ const HeroPage = () => {
 
                     <div className="flex items-center gap-3">
                         <ButtonPrimary
-                            label="Download CV"
-                            icon="download"
+                            href="/resume"
+                            label="Resume"
+                            icon="description"
                             classes="magnetic-hover"
                         />
                         <ButttonOutline
-                            href="#about"
-                            label="Scroll down"
-                            icon="arrow_downward"
+                            href="/references"
+                            label="References"
+                            icon="folder_open"
                             classes="magnetic-hover"
                         />
                     </div>

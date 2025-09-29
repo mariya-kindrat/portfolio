@@ -1,23 +1,45 @@
+import { Link } from "react-router-dom";
+
 const ButttonOutline = ({ href, target = "_self", label, icon, classes }) => {
     if (href) {
-        return (
-            <a
-                href={href}
-                targrt={target}
-                className={"btn btn-outline " + classes}
-            >
-                {label}
-                {icon ? (
-                    <span
-                        className="material-symbols-rounded"
-                        aria-hidden="true"
-                    >
-                        {" "}
-                        {icon}
-                    </span>
-                ) : undefined}
-            </a>
-        );
+        // Check if it's an internal route (starts with /) or external link
+        const isInternalRoute = href.startsWith("/") && !href.startsWith("//");
+
+        if (isInternalRoute) {
+            return (
+                <Link to={href} className={"btn btn-outline " + classes}>
+                    {label}
+                    {icon ? (
+                        <span
+                            className="material-symbols-rounded"
+                            aria-hidden="true"
+                        >
+                            {" "}
+                            {icon}
+                        </span>
+                    ) : undefined}
+                </Link>
+            );
+        } else {
+            return (
+                <a
+                    href={href}
+                    target={target}
+                    className={"btn btn-outline " + classes}
+                >
+                    {label}
+                    {icon ? (
+                        <span
+                            className="material-symbols-rounded"
+                            aria-hidden="true"
+                        >
+                            {" "}
+                            {icon}
+                        </span>
+                    ) : undefined}
+                </a>
+            );
+        }
     } else {
         return (
             <button className={"btn btn-outline " + classes}>
