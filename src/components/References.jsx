@@ -14,29 +14,11 @@ const References = () => {
     const references = [
         {
             id: 1,
-            filename: "kindrat_mariya_resume_professional_reference.pdf",
+            filename: "reference_letter_for_kindrat_mariya.pdf",
             displayName: "Professional Reference",
-            description: "Professional reference letter from supervisor",
-            company: "Previous Company",
-            position: "Professional Reference",
-            date: "2025",
-        },
-        {
-            id: 2,
-            filename: "kindrat_mariya_resume_reference.pdf",
-            displayName: "Reference Letter",
-            description: "Reference letter from colleague",
-            company: "Previous Company",
-            position: "Reference",
-            date: "2025",
-        },
-        {
-            id: 3,
-            filename: "kindrat_mariya_resume_referal.pdf",
-            displayName: "Referral Letter",
-            description: "Professional referral letter",
-            company: "Previous Company",
-            position: "Referral",
+            description: "Professional reference letter from Manager",
+            company: "Italy Destination Services",
+            position: "Owner/Manager",
             date: "2025",
         },
     ];
