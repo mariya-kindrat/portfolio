@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ButttonOutline = ({ href, target = "_self", label, icon, classes }) => {
     if (href) {
-        // Check if it's an internal route (starts with /) or external link
+        
         const isInternalRoute = href.startsWith("/") && !href.startsWith("//");
 
         if (isInternalRoute) {
