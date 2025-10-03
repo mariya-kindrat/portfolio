@@ -9,8 +9,8 @@ const Resume = () => {
     const handleDownload = () => {
         // Create a temporary link element to trigger download
         const link = document.createElement("a");
-        link.href = "/resume/kindrat-mariya_resume.pdf";
-        link.download = "kindrat-mariya_resume.pdf";
+        link.href = "/resume/kindrat_mariya_resume.pdf";
+        link.download = "kindrat_mariya_resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
